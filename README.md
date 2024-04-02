@@ -1,6 +1,6 @@
 #  🤖 Vue Maps
 
-![alt text](https://github.com/amampel/Vue-Maps/blob/main/image.jpg?raw=true)
+![alt text](https://github.com/amampel/Vue-Maps/blob/main/vue-maps-image.png?raw=true)
 
 Internal project handmade in Vue 3, TypeScript, and Vuex.
 
