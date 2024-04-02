@@ -123,7 +123,7 @@ const mutation: MutationTree<MapState> = {
                 'line-join': 'round'
             },
             paint: {
-                'line-color': 'black',
+                'line-color': '#41b883',
                 'line-width': 3
             }
         });

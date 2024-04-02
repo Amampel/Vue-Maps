@@ -17,7 +17,7 @@ export default defineComponent({
             await Promise.resolve()
             const map = new mapboxgl.Map({
                 container: mapElement.value,
-                style: 'mapbox://styles/mapbox/light-v11',
+                style: 'mapbox://styles/mapbox/dark-v11',
                 center: userLocation.value,
                 zoom: 15
             })
