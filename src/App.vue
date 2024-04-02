@@ -31,8 +31,8 @@ nav a.router-link-exact-active {
 
 .logo {
   position: fixed;
-  bottom: 2rem;
-  right: 2rem;
+  bottom: 3rem;
+  right: 3rem;
   width: 5rem;
 }
 </style>
