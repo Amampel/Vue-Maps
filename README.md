@@ -1,4 +1,7 @@
 #  🤖 Vue Maps
+
+![alt text](https://github.com/amampel/Vue-Maps/blob/main/image.jpg?raw=true)
+
 Internal project handmade in Vue 3, TypeScript, and Vuex.
 
 Vue Maps application retrieves your location, and from that point, you can search for destinations. When you select a destination, it will automatically display the driving route on the map and tell you the distance in kilometers and how far it is from your location.
