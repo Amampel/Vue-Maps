@@ -23,7 +23,7 @@ Node v18.10.0 o versión posterior
 Clonar el proyecto usando git:
 
 ```bash
-git clone git@bitbucket.org:the-cocktail/glia-frontend.git
+git clone git@github.com:Amampel/Vue-Maps.git
 ```
 
 Para la instalación de dependencias, ejecutar:
