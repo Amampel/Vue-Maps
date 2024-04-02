@@ -1,83 +1,58 @@
-# 🤖 Vue Maps
+🤖 Vue Maps
+Internal TCK project in Vue 3, TypeScript, and Vuex.
 
-Proyecto interno de TCK en Vue 3, typescript and Vuex.
+Vue Maps application retrieves your location, and from that point, you can search for destinations. When you select a destination, it will automatically display the driving route on the map and tell you the distance in kilometers and how far it is from your location.
 
-La aplicación Vue Maps extrae tu ubicación y a partir de ese momento puedes buscar destinos, cuando selecciones un destino automaticamente se mostrará el camino que tienes que hacer en coche en el mapa y te dirá a cuantos kilometros está y a cuanta distancia de tu ubicación está.
+Currently, I'm using Mapbox for map presentation and polyfills.
 
-Actualmente estoy usando mapbox para la presentación del mapa y los polyfill.
+Technological Stack
+Name	Version
+Language	TypeScript	^4.9.5
+Framework	Vue.js (SFC)	^3.2.13
+Store	Vuex	^4.0.0
+⚠️ Prerequisites
+Node v18.10.0 or later version.
 
-## Stack tecnológico
+🛠 Installation
+Clone the project using git:
 
-|               | Nombre      | Versión |
-| ------------- | ----------- | ------- |
-| **Lenguaje**  | typescript  | ^4.9.5  |
-| **Framework** | vuejs (SFC) | ^3.2.13 |
-| **Store**     | VueX        | ^4.0.0  |
-
-## ⚠️ Prerrequisitos
-
-Node v18.10.0 o versión posterior
-
-## 🛠 Instalación
-
-Clonar el proyecto usando git:
-
-```bash
+bash
+Copy code
 git clone git@github.com:Amampel/Vue-Maps.git
-```
+To install dependencies, run:
 
-Para la instalación de dependencias, ejecutar:
-
-```bash
+bash
+Copy code
 npm install
-```
+To run the project in development mode, execute:
 
-Para levantar el proyecto en modo desarrollo, ejecutar:
-
-```bash
+bash
+Copy code
 npm run serve
-```
+This will start a server locally (http://localhost:8080/).
 
-Esto levantará un servidor en local (http://localhost:8080/).
+The page will automatically render when there are changes. Errors can also be viewed in the console.
 
-La página se renderizará automáticamente cuando haya cambios. También se puede ver por consola si existen errores.
+📌 Start Production Mode
+Compilation, minification, and preview of the production mode.
 
-### 📌 Iniciar modo Producción
-
-Compilación, minificación y previsualización del modo en producción.
-
-```
+arduino
+Copy code
 npm run build
 npm run preview
-```
+⚙️ Other Useful Commands
+Linter
+Every time a commit is made, the Husky hook will execute the linter. But it can also be done manually with:
 
-## ⚙️ Otros comandos de interés
-
-### Linter
-
-Cada vez que se haga un commit el hook de husky ejecutará el linter. Pero también se puede hacer manualmente con:
-
-```
+arduino
+Copy code
 npm run lint:all
-```
+The project also uses a linter from package.json that organizes, lints in search of errors, and structures the content according to the configuration defined in the .fixpackrc file.
 
-El proyecto también utiliza un linter de package.json que ordena, lintea en buscar de errores y estructura el contenido de acuerdo a la configuración definida en el archivo .fixpackrc
+If any modifications are made to package.json when committing, it will execute the Husky hook that will run the fixpack linter. If it fails, we should execute the following command to format the package.json according to the defined rules:
 
-Si realizamos alguna modificación en el package.json cuando hagamos el commit ejecutara el hook de husky que lanzara el linter del fixpack. Si falla, deberemos ejecutar el siguiente comando para formatear el package.json de acuerdo a las reglas definidas:
-
-```
+Copy code
 fixpack
-```
-
-## 📍 Cosas interesantes
-
-### Indicaciones de desarrollo:
-
-- Toda la aplicación está construida utilizando vue 3 y concretamente la composition API mediante el azucar sintáctico script setup. Si quieres más información: [Docs](https://v3.vuejs.org/api/sfc-script-setup.html#basic-syntax).
-
-## 🚧 Por hacer...
-
-Por problema de tiempos, quedará pendiente desarrollar:
-
-- Saber qué lógica debe tener la vista de la selección de prompts (los valores seleccionados ya se guardan en el store)
-- Hacer test unitaros de los componentes
+📍 Interesting Points
+Development Notes:
+The entire application is built using Vue 3, specifically the Composition API using the syntactic sugar script setup. For more information, refer to Docs.
